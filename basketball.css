@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid rgba(234,176,66,255);
+    margin-bottom: 30px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    transition: all 250ms ease-in-out;
+    border-bottom: 3px solid rgba(234,176,66,255);
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: all 250ms ease-in-out;
+}
+
+
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: rgba(33,37,82,255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    transition: all 250ms ease-in-out;
+}
+
+.navbar li a:hover{
+    color: rgba(234,176,66,255);
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.sports{
+    border: 2px solid rgba(33,37,82,255);
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 250ms ease-in-out;
+    position: relative;
+    color: rgba(33,37,82,255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background: none;
+}
+.sports:hover{
+    border: 2px solid rgba(234,176,66,255);
+    color: rgba(234,176,66,255);
+    cursor: pointer;
+}
+.sports-dropdown{
+    position: absolute;
+    padding-top: 15px;
+    z-index: 1;
+    display: none;
+    min-width: 200px;
+}
+.sports-dropdown a{
+    padding: 10px;
+    background: rgb(216, 216, 216);
+    display: block;
+}
+.sports-dropdown a:hover{
+    background: rgb(221, 221, 221);
+}
+.dropdown:hover .sports-dropdown{
+    display: block;
+}
+
+.socials{
+    display: flex;
+    z-index: 1;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 40vh;
+    background: white;
+    padding: 20px 10px 15px 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.social-img{
+    width: 50px;
+    transition: all 250ms ease-in-out;
+}
+.social-img:hover{
+    width: 60px;
+}
+
+.home-content{
+    color: rgba(234,176,66,255);
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    padding-top: 40vh;
+}
+
+.home-content span{
+    color: white;
+}
+
+.home-info{
+    color: rgba(234,176,66,255);
+    font-size: 100px;
+}
+
+.roster{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.roster-title{
+    font-family: 'Cinzel', serif;
+    color: rgba(33,37,82,255);
+    font-size: 50px;
+    text-align: center;
+
+    padding-bottom: 30px;
+}
+
+table{
+    min-width: 75%;
+    border-collapse: collapse;
+    background: rgb(245, 245, 245);
+    margin-bottom: 30px;
+}
+table tr th{
+    border: 2px solid rgb(207, 207, 207);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+table tr th span{
+    color: rgba(234,176,66,255);
+}
+
+.headshot{
+    width: 100px;
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
